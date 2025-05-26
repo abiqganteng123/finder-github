@@ -472,7 +472,7 @@
   </main>
 
   <footer class="footer" aria-label="Footer">
-    Made by ❤️ <span>ab.iqqq</span>
+    Made By ❤️ <span>ab.iqqq</span>
   </footer>
 
   <script>
@@ -548,6 +548,9 @@
         </div>
         ${renderRepoList(repos)}
       `;
+
+      // Scroll ke bagian hasil secara smooth
+      userInfo.scrollIntoView({ behavior: 'smooth', block: 'start' });
 
       // Trigger animations after DOM update
       setTimeout(() => {
